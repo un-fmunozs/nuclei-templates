@@ -11,21 +11,21 @@ Templates are the core of [nuclei scanner](https://github.com/projectdiscovery/n
 
 An overview of the nuclei template directory including number of templates and HTTP request associated with each directory. 
 
-### Nuclei templates `v4.0.0` overview
+### Nuclei templates `v7.3.1` overview
 
 | Templates | Counts | Templates | Counts |
 |----|----|----|----|
-| cves | 139 | files | 43 |
-| vulnerabilities | 39 | panels | 40 |
-| technologies | 41 | security-misconfiguration | 24 |
+| cves | 140 | files | 43 |
+| vulnerabilities | 39 | panels | 45 |
+| technologies | 37 | security-misconfiguration | 24 |
 | workflows | 16 | tokens | 8 |
 | dns | 6 | fuzzing | 6 |
 | generic-detections | 3 | default-credentials | 3 |
 | subdomain-takeover | 2 | payloads | 2 |
-| wordlists | 1 | misc | 12 |
+| wordlists | 1 | misc | 13 |
 
 
-### Nuclei templates `v4.0.0` tree overview
+### Nuclei templates `v7.3.1` tree overview
 
 <details>
 <summary> Nuclei templates </summary>
@@ -75,6 +75,7 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── CVE-2019-11248.yaml
 │   ├── CVE-2019-11510.yaml
 │   ├── CVE-2019-11580.yaml
+│   ├── CVE-2019-11581.yaml
 │   ├── CVE-2019-12314.yaml
 │   ├── CVE-2019-12461.yaml
 │   ├── CVE-2019-12593.yaml
@@ -84,7 +85,6 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── CVE-2019-14974.yaml
 │   ├── CVE-2019-15043.yaml
 │   ├── CVE-2019-15107.yaml
-│   ├── CVE-2019-15858.yaml
 │   ├── CVE-2019-16278.yaml
 │   ├── CVE-2019-1653.yaml
 │   ├── CVE-2019-16662.yaml
@@ -149,6 +149,7 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── CVE-2020-26214.yaml
 │   ├── CVE-2020-3187.yaml
 │   ├── CVE-2020-3452.yaml
+│   ├── CVE-2020-4463.yaml
 │   ├── CVE-2020-5284.yaml
 │   ├── CVE-2020-5405.yaml
 │   ├── CVE-2020-5410.yaml
@@ -249,6 +250,7 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── ntlm-directories.yaml
 │   ├── robots.txt.yaml
 │   ├── security.txt.yaml
+│   ├── trace-method.yaml
 │   ├── unencrypted-bigip-ltm-cookie.yaml
 │   ├── wp-xmlrpc.yaml
 │   └── xml-schema-detect.yaml
@@ -258,13 +260,17 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── atlassian-crowd-panel.yaml
 │   ├── cisco-asa-panel.yaml
 │   ├── citrix-adc-gateway-detect.yaml
+│   ├── citrix-vpn-detect.yaml
 │   ├── compal.yaml
 │   ├── crxde.yaml
 │   ├── docker-api.yaml
 │   ├── fortinet-fortigate-panel.yaml
+│   ├── github-enterprise-detect.yaml
+│   ├── gitlab-detect.yaml
 │   ├── globalprotect-panel.yaml
 │   ├── go-anywhere-client.yaml
 │   ├── grafana-detect.yaml
+│   ├── identityguard-selfservice-entrust.yaml
 │   ├── iomega-lenovo-emc-shared-nas-detect.yaml
 │   ├── jenkins-asyncpeople.yaml
 │   ├── jmx-console.yaml
@@ -273,6 +279,7 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── mobileiron-login.yaml
 │   ├── netscaler-gateway.yaml
 │   ├── network-camera-detect.yaml
+│   ├── oipm-detect.yaml
 │   ├── parallels-html-client.yaml
 │   ├── phpmyadmin-panel.yaml
 │   ├── polycom-admin-detect.yaml
@@ -329,12 +336,9 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── artica-web-proxy-detect.yaml
 │   ├── basic-auth-detection.yaml
 │   ├── bigip-config-utility-detect.yaml
-│   ├── citrix-vpn-detect.yaml
 │   ├── clockwork-php-page.yaml
 │   ├── couchdb-detect.yaml
 │   ├── favicon-detection.yaml
-│   ├── github-enterprise-detect.yaml
-│   ├── gitlab-detect.yaml
 │   ├── google-storage.yaml
 │   ├── graphql.yaml
 │   ├── home-assistant.yaml
@@ -350,7 +354,6 @@ An overview of the nuclei template directory including number of templates and H
 │   ├── netsweeper-webadmin-detect.yaml
 │   ├── nifi-detech.yaml
 │   ├── oidc-detect.yaml
-│   ├── oipm-detect.yaml
 │   ├── pi-hole-detect.yaml
 │   ├── prometheus-exporter-detect.yaml
 │   ├── prometheus-exposed-panel.yaml
@@ -438,7 +441,7 @@ An overview of the nuclei template directory including number of templates and H
 
 </details>
 
-**16 directories, 387 files**.
+**16 directories, 390 files**.
 
 Please navigate to https://nuclei.projectdiscovery.io for detailed documentation to build new and your own custom templates and many example templates for easy understanding. 
 
